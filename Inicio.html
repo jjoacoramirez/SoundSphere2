@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundSphere - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <img src="img/Logo chico.png" alt="" class="logo">
+            <div class="nav">
+                <a href="Biblioteca.html">Biblioteca</a>
+                <a href="Inicio.html" class="active">Inicio</a>
+                <a href="Explorar.html">Explorar</a>
+            </div>
+            <a href="login.html"><img src="img/Icono Login.png" alt="" class="Login"></a>
+        </div>
+        <div class="main-container">
+            <div class="buscar">
+                <input type="text" name="" id="busqueda">
+                <button class="buscarBtn" id="buscarBtn"><img src="img/Lupa.png" alt=""></button>
+            </div>
+            <div class="tarjetas-container">
+                <div class="titulo">
+                    <p>Porque escuchaste <b>Colors - Crossfade</b></p>
+                    <img src="img/Pause Button.png" alt="">
+                </div>
+                <div class="grupo-tarjetas">
+                    
+                    <div class="tarjeta">
+                        <img src="img/Coming Down.png" alt="">
+                        <b>Coming Down</b>
+                        <p>Emira Elfeky</p>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="img/So Sick.png" alt="">
+                        <b>I'm So Sick</b>
+                        <p>Flyleaf</p>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="img/The Kill.png" alt="">
+                        <b>The Kill (Bury me)</b>
+                        <p>Thirty Seconds To Mars</p>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="img/Diamond Eyes.png" alt="">
+                        <b>Diamond Eyes</b>
+                        <p>Deftones</p>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="img/Covet.png" alt="">
+                        <b>Covet</b>
+                        <p>Basement</p>
+                    </div>
+                    
+                </div>
+            </div>
+        
+            
+            <div class="tarjetas-container">
+                <div class="titulo">
+                    <p>Playlist <b>Veranito</b></p>
+                    <img src="img/Pause Button.png" alt="">
+                </div>
+                <div class="grupo-tarjetas">
+                    
+                    <div class="tarjeta">
+                        <img src="img/Diles.png" alt="">
+                        <b>Diles Remix</b>
+                        <p>Bad Bunny</p>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="img/NO me conoce.png" alt="">
+                        <b>No Me Conoce Remix</b>
+                        <p>Jhayco</p>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="img/Un Verano Sin Ti.png" alt="">
+                        <b>Ojitos Lindos</b>
+                        <p>Bad Bunny</p>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="img/Safaera.png" alt="">
+                        <b>Safaera</b>
+                        <p>Bad Bunny</p>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="img/De Museo.png" alt="">
+                        <b>De Museo</b>
+                        <p>Bad Bunny</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="tarjetas-container">
+                <div class="titulo">
+                    <p>Porque te gusta el <b>Trap</b></p>
+                    <img src="img/Pause Button.png" alt="">
+                </div>
+                <div class="grupo-tarjetas">
+                    
+                    <div class="tarjeta">
+                        <img src="img/We dont trust you.png" alt="">
+                        <b>We Don't Trust You</b>
+                        <p>Metro Boomin</p>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="img/Fukumean.png" alt="">
+                        <b>Fukumean</b>
+                        <p>Gunna</p>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="img/XOTOURLIFE.png" alt="">
+                        <b>XO Tour Llif3</b>
+                        <p>Lil Uzi Vert</p>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="img/My Eyes.png" alt="">
+                        <b>My Eyes</b>
+                        <p>Travis Scott</p>
+                    </div>
+                    <div class="tarjeta">
+                        <img src="img/Breathe.png" alt="">
+                        <b>Breathe</b>
+                        <p>Yeat</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <div class="multimedia">
+        <div class="multimedia-container">
+            <audio id="cancion">
+                <source src="audio/colors-video.mp3">
+            </audio>
+
+            <div class="musica-logo">
+                <img src="img\colors.png" alt="foto-musica" id="portada">
+                <div>
+                    <span id="nombreMusica">Coloros</span>
+                    <span id="nombreCantante">Crossfade</span>
+                </div>
+            </div>
+            
+
+            <div class="media-control">
+                <button id="volver"><img src="img\Previows Button.png" alt=""></button>
+                <button onclick="playPause()" id="play-pause" class="play"></button>
+                <button id="siguiente"><img src="img\Next Button.png" alt=""></button>
+            </div>
+
+        </div>
+
+        <div class="barra">
+            <input type="range" value="0" id="progress">
+            <span id="progressTime">0:00/0:00</span>
+            <div class="barra-progreso"></div>
+        </div>        
+
+        <div class="volumen">
+            <img id="speaker" src="img\Speaker.png" alt="">
+            <input type="range" id="volumen" min="0" max="100" value="50">
+        </div>
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>

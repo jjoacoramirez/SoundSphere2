@@ -1,0 +1,15 @@
+{
+  "name": "soundsphere",
+  "version": "1.0.0",
+  "description": "El proyecto se basa en la creación de una página web capaz de ofrecer y reproducir de forma gratuita música de cualquier artista. Nuestro objetivo es que los usuarios puedan disfrutar de sus canciones favoritas sin ningún impedimento y en una plataforma agradable. Como objetivo secundario queremos incentivar a los usuarios a que se registren en la aplicación con un perfil, de esta forma podríamos hacer mejores recomendaciones basándonos en los gustos de cada persona.\r  Nuestra web será 100% gratuita, con una experiencia de usuario renovada. Ofreceremos un servicio totalmente nuevo: los nuevos usuarios podrán exportar la información de sus antiguos perfiles en diferentes plataformas e incluirlos en nuestra web. De esta forma los usuarios podrán utilizar la web desde un principio con sus preferencias, revolucionando el mundo del streaming musical. \r ### Tema a desarrollar\r  SoundSphere es una plataforma de streaming de audio 100% gratuita.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4"
+  }
+}
